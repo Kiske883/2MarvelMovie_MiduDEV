@@ -1,0 +1,73 @@
+:root {
+    color-scheme: light dark;
+}
+
+/*
+.img {
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 16px;    
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+*/
+
+/* Contenedor principal de los artículos */
+.section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  /* Estilo general para cada artículo */
+  .film-container,
+  .section-container > article {
+    flex: 1 1 300px; /* Se ajusta al tamaño disponible, mínimo 300px */
+    max-width: 400px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  /* Asegura que las imágenes no desborden */
+  .img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 16px;    
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;    
+  }
+
+  .img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }  
+  
+  /* Opcional: estética para los títulos y pies */
+  .title-container,
+  .footer-image-container {
+    margin-top: 1rem;
+  }
+  
+  /* Responsive: asegura que los artículos estén uno debajo del otro en pantallas pequeñas */
+  @media (max-width: 768px) {
+    .section-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
